@@ -14,6 +14,9 @@ module.exports = {
       },
       colors: {
         'primary':'#FFFE55'
+      },
+      backgroundImage:{
+        'services': "url('/graphic/services/servicesbg.png')"
       }
     },
   },

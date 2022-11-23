@@ -27,7 +27,7 @@ function Navbar() {
     >
       <div className="flex w-full justify-center items-center px-[100px]">
         <div className="flex w-full max-w-[1720px] justify-between  py-[35px] ">
-          <Image src="/Dips-logo.svg" height={75} width={224} />
+          <Image src="/Dips-logo.svg" height={75} width={224} alt="dips-logo"/>
           <div className="flex gap-[60px] items-center">
             <ul className="font-noto flex gap-10 items-center text-white text-[15px]">
               <li>

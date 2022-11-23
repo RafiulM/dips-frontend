@@ -17,6 +17,7 @@ function Hero() {
             width={3000}
             height={1080}
             className="object-cover"
+            alt="cover"
           />
         </div>
       </div>

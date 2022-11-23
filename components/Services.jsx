@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { servicesData } from "../data/Services";
 import { useState } from "react";
+import { LearnMoreButton } from "./Buttons";
 
 function Services() {
   const [expand, setExpand] = useState(null);
@@ -15,7 +16,7 @@ function Services() {
   };
 
   return (
-    <div className="flex justify-center px-[100px] bg-black pb-10">
+    <div className="flex justify-center px-[100px] bg-black bg-services bg-bottom bg-no-repeat">
       <div className="flex flex-col max-w-[1720px] w-full">
         <div className="flex justify-between items-center">
           <h1 className="font-noto text-white text-[90px] leading-none">
@@ -44,54 +45,53 @@ function Services() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col py-20">
+
+        <div className="flex flex-col pt-20">
           {servicesData.map((data, id) => (
-            <div className="flex flex-col text-white py-20 border-t-[1px] gap-8 duration-300 ease-in-out">
-              <div key={id} className="flex justify-between items-center">
-                <span className="text-2xl">{data.title}</span>
-                <div className="flex items-center gap-12">
-                  <p className="max-w-[623px]">{data.content}</p>
-                  <Link
-                    href={data.to}
-                    className="flex gap-2 bg-primary px-5 py-4"
-                  >
-                    <span className="text-black text-[15px]">LEARN MORE</span>
-                    <svg
-                      width="18"
-                      height="19"
-                      viewBox="0 0 18 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3.6 0V1.9H14.931L0 17.6605L1.269 19L16.2 3.2395V15.2H18V0H3.6Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </Link>
-                  <div className="flex w-11 items-center justify-center duration-300 ease-in-out">
-                    <span
-                      className="text-6xl font-thin cursor-pointer"
-                      onClick={() => toggle(id)}
-                    >
-                      {expand == id ? "-" : "+"}
-                    </span>
+            <div
+              key={id}
+              className="grid grid-cols-12 text-white py-7 border-t-[1px] gap-20 duration-300 ease-in-out"
+            >
+              <div className="item1 col-span-5 flex flex-col justify-between">
+                <span className="text-2xl py-4">{data.title}</span>
+                <div
+                  className={
+                    expand == id
+                      ? "flex justify-between overflow-hidden h-auto max-h-96 duration-300 ease-in-out text-7xl"
+                      : "flex justify-between overflow-hidden h-auto max-h-0 duration-300 ease-in-out text-7xl"
+                  }
+                >
+                  <div className="flex">
+                    <Image src={data.image1} width={722} height={393} alt="services"/>
                   </div>
                 </div>
               </div>
-              <div
-                className={
-                  expand == id
-                    ? "flex justify-between overflow-hidden h-auto max-h-96 duration-300 ease-in-out text-7xl"
-                    : "flex justify-between overflow-hidden h-auto max-h-0 duration-300 ease-in-out text-7xl"
-                }
-              >
-                <div className="flex">
-                  <Image src={data.image1} width={722} height={393}/>
+              <div className="item2 col-span-7 flex flex-col justify-between">
+                <div className="flex justify-between items-center gap-8">
+                  <p className="max-w-[623px]">{data.content}</p>
+                  <div className="flex gap-4">
+                    <LearnMoreButton href={data.to}/>
+                    <div className="flex w-11 items-center justify-center duration-300 ease-in-out">
+                      <span
+                        className="text-6xl font-thin cursor-pointer"
+                        onClick={() => toggle(id)}
+                      >
+                        {expand == id ? "-" : "+"}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex">
-                  <Image src={data.image2} width={440} height={285}/>
-                  <Image src={data.image3} width={440} height={285}/>
+                <div
+                  className={
+                    expand == id
+                      ? "flex justify-between overflow-hidden h-auto max-h-96 duration-300 ease-in-out text-7xl"
+                      : "flex justify-between overflow-hidden h-auto max-h-0 duration-300 ease-in-out text-7xl"
+                  }
+                >
+                  <div className="flex w-full justify-between gap-8">
+                    <Image src={data.image2} width={440} height={285} alt="services"/>
+                    <Image src={data.image3} width={440} height={285} alt="services"/>
+                  </div>
                 </div>
               </div>
             </div>
