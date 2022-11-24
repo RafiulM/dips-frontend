@@ -49,7 +49,7 @@ export const valueData = [
     {
         'id': 3,
         'heading': 'Dedication',
-        'graphic': graphicValue,
+        'graphic': graphicValue[2],
         'content': <p>Just being good at something is one side.<br /><br />But for truly perfect results and content that converts, it takes people who put their heart and soul into every project until you as our client and partner, are 100% satisfied.</p>,
     },
 
