@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import Portfolio from '../components/Portfolio'
 import Services from '../components/Services'
 import Team from '../components/Team'
+import Value from '../components/Value'
 import Workflow from '../components/Workflow'
 import styles from '../styles/Home.module.css'
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Portfolio />
         <AboutUs />
         <Team />
+        <Value />
       </main>
 
       <footer>
