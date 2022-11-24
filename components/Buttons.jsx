@@ -4,7 +4,7 @@ export function PrimaryButton({ href,text }) {
   return (
     <Link
       href={href}
-      className="flex justify-between items-center w-[207px] bg-primary px-5 py-4"
+      className="flex justify-between items-center w-[207px] h-fit bg-primary px-5 py-4"
     >
       <span className="text-black text-[15px]">{text}</span>
       <svg

@@ -16,7 +16,8 @@ module.exports = {
         'primary':'#FFFE55'
       },
       backgroundImage:{
-        'services': "url('/graphic/services/servicesbg.png')"
+        'services': "url('/graphic/services/servicesbg.png')",
+        'aboutus': "url('/graphic/aboutus/aboutusbg.png')",
       }
     },
   },
