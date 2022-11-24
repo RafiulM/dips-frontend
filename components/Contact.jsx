@@ -14,7 +14,7 @@ function Contact() {
             <p className="text-2xl mt-8 ">
               Looking to talk to us directly, or planning an office visit? As
               Digital Agency, Dipstrategy start by understanding your business
-              need to comes up with any solutions. That's why it is important
+              need to comes up with any solutions. That&apos;s why it is important
               for us to hear your story. When it come to listening to your
               story, we are all ears.
             </p>
