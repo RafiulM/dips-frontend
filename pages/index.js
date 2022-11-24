@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Portfolio from '../components/Portfolio'
 import Services from '../components/Services'
+import Team from '../components/Team'
 import Workflow from '../components/Workflow'
 import styles from '../styles/Home.module.css'
 
@@ -27,6 +28,7 @@ export default function Home() {
         <Workflow />
         <Portfolio />
         <AboutUs />
+        <Team />
       </main>
 
       <footer>
