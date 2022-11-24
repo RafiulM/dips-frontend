@@ -24,12 +24,20 @@ function Team() {
         <div className="grid grid-cols-4 gap-16 h-auto py-10">
           {team.map((data, id) => (
             <div key={id} className="flex flex-col">
-              <div>
-                <Image src={data.photo} width={500} height={330} alt="team"/>
+              <div className="object-cover overflow-hidden">
+                <Image
+                  src={data.photo}
+                  width={500}
+                  height={330}
+                  alt="team"
+                  className="hover:scale-105 hover:brightness-90 duration-500 ease-in-out"
+                />
               </div>
               <div className="flex flex-col gap-3 px-8 py-7 bg-primary">
                 <div className="flex flex-col">
-                  <span className="font-extrabold text-[26px]">{data.name}</span>
+                  <span className="font-extrabold text-[26px]">
+                    {data.name}
+                  </span>
                   <span>{data.jobtitle}</span>
                 </div>
                 <div className="flex gap-5">
