@@ -5,7 +5,7 @@ import { PrimaryButton } from "./Buttons";
 
 function Workflow() {
   return (
-    <div className="flex justify-center p-[100px] bg-white">
+    <div id="Workflow" className="flex justify-center p-[100px] bg-white">
       <div className="flex flex-col max-w-[1720px] w-full">
         <div className="flex">
           <h2 className="font-noto text-[90px] w-full mb-4">WORKFLOW</h2>

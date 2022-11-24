@@ -16,7 +16,7 @@ function Services() {
   };
 
   return (
-    <div className="flex justify-center px-[100px] bg-black bg-services bg-bottom bg-no-repeat">
+    <div id="Services" className="flex justify-center px-[100px] pt-[160px] bg-black bg-services bg-bottom bg-no-repeat">
       <div className="flex flex-col max-w-[1720px] w-full">
         <div className="flex justify-between items-center">
           <h1 className="font-noto text-white text-[90px] leading-none">
@@ -89,7 +89,7 @@ function Services() {
                 <div
                   className={
                     expand == id
-                      ? "flex justify-between overflow-hidden h-auto max-h-96 duration-300 ease-in-out text-7xl"
+                      ? "flex justify-between overflow-hidden h-auto max-h-96 duration-300 ease-in-out text-7xl mt-8"
                       : "flex justify-between overflow-hidden h-auto max-h-0 duration-300 ease-in-out text-7xl"
                   }
                 >

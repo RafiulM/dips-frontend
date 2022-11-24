@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import AboutUs from '../components/AboutUs'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
@@ -10,7 +9,6 @@ import Services from '../components/Services'
 import Team from '../components/Team'
 import Value from '../components/Value'
 import Workflow from '../components/Workflow'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (

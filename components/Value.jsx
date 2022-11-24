@@ -3,7 +3,7 @@ import { valueData } from "../data/Value";
 
 function Value() {
   return (
-    <div className="flex justify-center p-[100px] bg-black">
+    <div id="Value" className="flex justify-center p-[100px] bg-black">
       <div className="flex flex-col max-w-[1720px] w-full gap-36">
         <div className="flex justify-between items-center">
           <h2 className="font-noto text-[90px] text-white mb-4">OUR VALUES</h2>

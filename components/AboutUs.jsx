@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function AboutUs() {
   return (
-    <div className="flex flex-col">
+    <div id="About" className="flex flex-col">
       <div className="flex justify-center flex-col px-[100px] bg-white">
         <div className="flex flex-col justify-between max-w-[1720px] w-full gap-36">
           <h2 className="font-noto text-[90px] mb-4">ABOUT US</h2>

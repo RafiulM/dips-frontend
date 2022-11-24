@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Link as LinkS } from "react-scroll";
 
 function Footer() {
   return (
@@ -22,19 +23,69 @@ function Footer() {
             <span className="text-xl font-semibold">Quick Links</span>
             <ul className="mt-4 leading-9 text-[15px]">
               <li>
-                <Link href="#">SERVICES</Link>
+                <LinkS
+                  activeClass="active"
+                  to="Services"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={100}
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  SERVICES
+                </LinkS>
               </li>
               <li>
-                <Link href="#">WORKFLOW</Link>
+                <LinkS
+                  activeClass="active"
+                  to="Workflow"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={100}
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  WORKFLOW
+                </LinkS>
               </li>
               <li>
-                <Link href="#">PORTFOLIO</Link>
+                <LinkS
+                  activeClass="active"
+                  to="Portfolio"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={100}
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  PORTFOLIO
+                </LinkS>
               </li>
               <li>
-                <Link href="#">ABOUT US</Link>
+                <LinkS
+                  activeClass="active"
+                  to="About"
+                  spy={true}
+                  smooth={true}
+                  offset={-200}
+                  duration={100}
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  ABOUT US
+                </LinkS>
               </li>
               <li>
-                <Link href="#">OUR VALUE</Link>
+                <LinkS
+                  activeClass="active"
+                  to="Value"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={100}
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  OUR VALUE
+                </LinkS>
               </li>
             </ul>
           </div>
@@ -42,16 +93,36 @@ function Footer() {
             <span className="text-xl font-semibold">Follow</span>
             <ul className="mt-4 leading-9 text-xl">
               <li>
-                <Link href="#">facebook</Link>
+                <Link
+                  href="#"
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  facebook
+                </Link>
               </li>
               <li>
-                <Link href="#">twitter</Link>
+                <Link
+                  href="#"
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  twitter
+                </Link>
               </li>
               <li>
-                <Link href="#">instagram</Link>
+                <Link
+                  href="#"
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  instagram
+                </Link>
               </li>
               <li>
-                <Link href="#">linkedin</Link>
+                <Link
+                  href="#"
+                  className="hover:underline hover:text-zinc-400 cursor-pointer"
+                >
+                  linkedin
+                </Link>
               </li>
             </ul>
           </div>

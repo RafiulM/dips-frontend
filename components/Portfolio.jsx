@@ -5,10 +5,10 @@ import { PrimaryButton } from "./Buttons";
 
 function Portfolio() {
   return (
-    <div className="flex justify-center p-[100px] bg-white">
+    <div id="Portfolio" className="flex justify-center p-[100px] bg-white">
       <div className="flex flex-col max-w-[1720px] w-full gap-36">
         <div className="flex justify-between items-center">
-          <h2 className="font-noto text-[90px] mb-4">PORTFOLIO</h2>
+          <h2 className="font-noto text-[90px] mb-4 mr-20">PORTFOLIO</h2>
           <div className="flex items-center gap-14">
             <p className="text-lg max-w-[662px]">
               Take a look at our most successful projects and see for yourself
@@ -58,7 +58,7 @@ function Portfolio() {
                   {data.category}
                 </span>
                 <h3 className="font-noto text-[58px] leading-none">{data.project}</h3>
-                <ol className="list-decimal list-inside mt-8">
+                <ol className="list-decimal pl-6 mt-8">
                   {data.highlights.map((highlight, id) => (
                     <li key={id} className="text-[21px] leading-10">
                       {highlight}

@@ -30,16 +30,16 @@ function Contact() {
           </div>
           <ul className="flex gap-6">
             <li>
-              <a href="https://www.facebook.com">FACEBOOK</a>
+              <a href="https://www.facebook.com" className="hover:underline">FACEBOOK</a>
             </li>
             <li>
-              <a href="https://www.twitter.com">TWITTER</a>
+              <a href="https://www.twitter.com" className="hover:underline">TWITTER</a>
             </li>
             <li>
-              <a href="https://www.instagram.com">INSTAGRAM</a>
+              <a href="https://www.instagram.com" className="hover:underline">INSTAGRAM</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com">LINKEDIN</a>
+              <a href="https://www.linkedin.com" className="hover:underline">LINKEDIN</a>
             </li>
           </ul>
         </div>
