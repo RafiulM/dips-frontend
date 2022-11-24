@@ -1,4 +1,4 @@
-## Disclaimer This website is not mobile-friendly.
+## Disclaimer : This website is not ready for mobile devices.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
