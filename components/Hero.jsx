@@ -38,7 +38,7 @@ function Hero() {
           </div>
         </div>
         <h1 className=" font-noto text-white max-w-[80%] text-[80px] mx-[100px]  leading-none">
-          PROBLEM TODAY
+          PROBLEMS TODAY
         </h1>
       </div>
     </div>
