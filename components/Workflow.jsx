@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { LearnMoreButton } from "./Buttons";
+import { PrimaryButton } from "./Buttons";
 
 function Workflow() {
   return (
@@ -61,7 +61,7 @@ function Workflow() {
               work. We actively involve you, the customer, in the processes so
               that you always know where your project currently stands.
             </p>
-            <LearnMoreButton href="#" />
+            <PrimaryButton href="#" text="LEARN MORE"/>
             <div className="flex flex-col gap-12 mt-12">
                 <Link href="#" className="font-noto text-[26px] underline">HOW WE COMMUNICATE WITH THE CLIENT</Link>
                 <Link href="#" className="font-noto text-[26px] underline">STAGES OF PROCESS</Link>

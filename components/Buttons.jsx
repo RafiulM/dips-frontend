@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-export function LearnMoreButton({ href }) {
+export function PrimaryButton({ href,text }) {
   return (
     <Link
       href={href}
       className="flex justify-between items-center w-[207px] bg-primary px-5 py-4"
     >
-      <span className="text-black text-[15px]">LEARN MORE</span>
+      <span className="text-black text-[15px]">{text}</span>
       <svg
         width="18"
         height="19"
@@ -22,3 +22,4 @@ export function LearnMoreButton({ href }) {
     </Link>
   );
 }
+

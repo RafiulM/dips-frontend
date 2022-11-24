@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { servicesData } from "../data/Services";
 import { useState } from "react";
-import { LearnMoreButton } from "./Buttons";
+import { PrimaryButton } from "./Buttons";
 
 function Services() {
   const [expand, setExpand] = useState(null);
@@ -70,7 +70,7 @@ function Services() {
                 <div className="flex justify-between items-center gap-8">
                   <p className="max-w-[623px]">{data.content}</p>
                   <div className="flex gap-4">
-                    <LearnMoreButton href={data.to}/>
+                    <PrimaryButton href={data.to} text="LEARN MORE"/>
                     <div className="flex w-11 items-center justify-center duration-300 ease-in-out">
                       <span
                         className="text-6xl font-thin cursor-pointer"
