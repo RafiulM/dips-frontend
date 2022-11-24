@@ -25,7 +25,7 @@ function Services() {
           </h1>
           <div className="flex gap-16">
             <p className="font-noto text-white text-3xl max-w-[580px]">
-              We've worked with a wide array of clients across the globe to
+              We&apos;ve worked with a wide array of clients across the globe to
               apply design fundamentals of elegance, simplicity
             </p>
             <Link href="#services" className="group flex mb-auto gap-8">
@@ -62,7 +62,12 @@ function Services() {
                   }
                 >
                   <div className="flex">
-                    <Image src={data.image1} width={722} height={393} alt="services"/>
+                    <Image
+                      src={data.image1}
+                      width={722}
+                      height={393}
+                      alt="services"
+                    />
                   </div>
                 </div>
               </div>
@@ -70,7 +75,7 @@ function Services() {
                 <div className="flex justify-between items-center gap-8">
                   <p className="max-w-[623px]">{data.content}</p>
                   <div className="flex gap-4">
-                    <PrimaryButton href={data.to} text="LEARN MORE"/>
+                    <PrimaryButton href={data.to} text="LEARN MORE" />
                     <div className="flex w-11 items-center justify-center duration-300 ease-in-out">
                       <span
                         className="text-6xl font-thin cursor-pointer"
@@ -89,8 +94,18 @@ function Services() {
                   }
                 >
                   <div className="flex w-full justify-between gap-8">
-                    <Image src={data.image2} width={440} height={285} alt="services"/>
-                    <Image src={data.image3} width={440} height={285} alt="services"/>
+                    <Image
+                      src={data.image2}
+                      width={440}
+                      height={285}
+                      alt="services"
+                    />
+                    <Image
+                      src={data.image3}
+                      width={440}
+                      height={285}
+                      alt="services"
+                    />
                   </div>
                 </div>
               </div>
