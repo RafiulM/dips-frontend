@@ -15,7 +15,7 @@ function Value() {
               <div className="flex justify-center items-center border border-[#E5E5E5] h-[222px] my-9">
                 {data.graphic}
               </div>
-              <p>{data.content}</p>
+              {data.content}
             </div>
           ))}
         </div>

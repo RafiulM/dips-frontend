@@ -11,7 +11,7 @@ function AboutUs() {
         </div>
       </div>
       <div className="bg-aboutus flex flex-col h-[625px] px-[100px] py-[55px]  bg-black w-full">
-        <div className="flex justify-between h-full">
+        <div className="flex justify-between h-full gap-12">
           <div className=" flex flex-col gap-8 max-w-[722px]">
             <p className="text-white text-xl leading-7">
               Hardianto is a name of person work in =digital agency based in
