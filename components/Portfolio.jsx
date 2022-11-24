@@ -70,7 +70,7 @@ function Portfolio() {
                 </div>
               </div>
               <div className="flex flex-col">
-                <Image src={data.image} width={1000} height={1000} />
+                <Image src={data.image} width={1000} height={1000} alt="portfolio"/>
               </div>
             </div>
           ))}

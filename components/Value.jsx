@@ -10,7 +10,7 @@ function Value() {
         </div>
         <div className="grid grid-cols-3 gap-48 text-[#E5E5E5] text-[32px]">
           {valueData.map((data, id) => (
-            <div key={data.id} className="flex flex-col">
+            <div key={id} className="flex flex-col">
               <span>{data.heading}</span>
               <div className="flex justify-center items-center border border-[#E5E5E5] h-[222px] my-9">
                 {data.graphic}

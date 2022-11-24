@@ -25,7 +25,7 @@ function Team() {
           {team.map((data, id) => (
             <div key={id} className="flex flex-col">
               <div>
-                <Image src={data.photo} width={500} height={330} />
+                <Image src={data.photo} width={500} height={330} alt="team"/>
               </div>
               <div className="flex flex-col gap-3 px-8 py-7 bg-primary">
                 <div className="flex flex-col">
