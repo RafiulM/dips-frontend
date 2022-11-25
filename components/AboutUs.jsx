@@ -5,13 +5,13 @@ import Image from "next/image";
 function AboutUs() {
   return (
     <div id="About" className="flex flex-col">
-      <div className="flex justify-center flex-col px-[100px] bg-white">
-        <div className="flex flex-col justify-between max-w-[1720px] w-full gap-36">
+      <div className="flex justify-center items-center flex-col px-[100px] bg-white">
+        <div className="flex flex-col justify-between  max-w-[1720px] w-full gap-36">
           <h2 className="font-noto text-[90px] mb-4">ABOUT US</h2>
         </div>
       </div>
-      <div className="bg-aboutus flex flex-col h-[625px] px-[100px] py-[55px]  bg-black w-full">
-        <div className="flex justify-between h-full gap-12">
+      <div className="bg-aboutus flex flex-col h-[625px] px-[100px] py-[55px]  bg-black w-full items-center">
+        <div className="flex justify-between max-w-[1720px] w-full h-full gap-12">
           <div className=" flex flex-col gap-8 max-w-[722px]">
             <p className="text-white text-xl leading-7">
               Hardianto is a name of person work in =digital agency based in
@@ -52,7 +52,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center max-w-[1722px] w-full">
           <h2 className="font-noto text-[90px] leading-none text-white">OUR MAGIC TEAM</h2>
           <PrimaryButton href="#" text="SEE MORE"/>
         </div>
